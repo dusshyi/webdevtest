@@ -1,22 +1,20 @@
-SGI Web Developer test
-=============================================
+Note:
 
-What is this?
--------------
+- Based on the instruction I only created the List view for this project.
+- Used React JS library for this project.
+- Created PromotionList component for this list view, which located in src/components/PromotionList.js
+- Add css in the src/App.css
+- Page will adjust the view if the screen is 480px.
 
-This is a Web Developer hiring competency test designed to gauge skill, code completeness and accuracy, and affinity for standards based development.
+# Getting Started with Create React App
 
-What are the rules?
--------------------
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Please read the INSTRUCTIONS.md file and follow the specifications and requirements therein.
+## Available Scripts
 
-How should I deliver my completed test?
----------------------------------------
+In the project directory, you can run:
 
-The preferred method is delivery via Github. Fork this repository, complete the test, then send a pull request. If you require an alternate delivery method, please contact the hiring manager.
+### `npm start`
 
-Anything else?
---------------
-
-You should commit your work often and write clear and informative commit messages.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
