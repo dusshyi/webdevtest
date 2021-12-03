@@ -2,6 +2,7 @@ export const testData = {
   server_time: "2016-01-01T12:00:00",
   promotion_objects: [
     {
+      promo: "promo01",
       promotion_name: "$1,000,000 Fortune Second-Chance Promotion",
       promo_image_url: "images/fortune.jpg",
       summary:
@@ -36,6 +37,7 @@ export const testData = {
       ],
     },
     {
+      promo: "promo02",
       promotion_name: "Millionaire Madness Second-Chance Promotion",
       promo_image_url: "images/mmadness.jpg",
       summary:
@@ -70,6 +72,7 @@ export const testData = {
       ],
     },
     {
+      promo: "promo03",
       promotion_name: "Money Money Millionaire Second-Chance Promotion",
       promo_image_url: "images/mmmillionaire.jpg",
       summary:

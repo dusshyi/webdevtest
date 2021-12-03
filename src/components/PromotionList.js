@@ -23,8 +23,6 @@ function PromotionList() {
             break;
         }
 
-        var drawingDate = new Date(data.drawings[0].drawing_date);
-
         return (
           <div>
             <div>
@@ -36,21 +34,28 @@ function PromotionList() {
               />
             </div>
             <div className="promo_inner_container">
-              <span key={key.promotion_name} className="Promo_header_link">
-                {data.promotion_name}
+              <span key={key.promotion_name} className="promo_header_link">
+                <a href={"/" + data.promo}>{data.promotion_name}</a>
               </span>
               <p>{data.summary}</p>
-              <p>
-                Next Drawing Date:{" "}
-                {new Intl.DateTimeFormat("en-US", {
-                  year: "numeric",
-                  month: "2-digit",
-                  day: "2-digit",
-                  hour: "2-digit",
-                  minute: "2-digit",
-                  second: "2-digit",
-                }).format(drawingDate)}
-              </p>
+              <div>
+                <span>Next Drawing Date: </span>
+                {data.drawings.map((date) => {
+                  var drawingDate = new Date(date.drawing_date);
+                  return (
+                    <div>
+                      <p key={date.drawing_date}>
+                        {new Intl.DateTimeFormat("en-US", {
+                          weekday: "long",
+                          year: "numeric",
+                          month: "long",
+                          day: "2-digit",
+                        }).format(drawingDate)}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         );

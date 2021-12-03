@@ -1,12 +1,10 @@
-.App {
-  text-align: center;
-  margin-top: 10px;
+body {
+  background-image: linear-gradient(#cccccc, #ffffff);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  text-align: center;
+  font-family: Arial;
 }
 
 .App-header {
@@ -35,17 +33,107 @@
   }
 
   .promo_img {
-    filter: drop-shadow(8px 4px 2px #ccc);
+    filter: drop-shadow(8px 4px 2px #828181);
     width: 450px;
   }
 
   .promo_inner_container {
-    height: 120px;
+    height: 200px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 50px;
     font-size: 18px;
     color: #444444;
+  }
+
+  .promo_detail_inner_container {
+    height: 200px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .promo_detail_deadline_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b20000;
+    padding-bottom: 20px;
+  }
+
+  .promo_detail_desktop_container {
+    display: none;
+  }
+
+  .promo_detail_mobile_container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 450px;
+    font-family: Arial;
+  }
+
+  .promo_detail_mobile_left_text {
+    width: 450px;
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .promo_detail_mobile_sub_title {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    width: 450px;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .table_detail_mobile {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 450px;
+    margin: 20px auto;
+    border: 2px solid #ffffff;
+  }
+
+  .table_detail_mobile td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #e0dede;
+    color: #595454;
+    border: 2px solid #ffffff;
+    font-weight: 700;
+  }
+
+  .table_detail_mobile_header {
+    color: #000;
+  }
+
+  .promo_detail_center_text {
+    width: 450px;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    color: #b20000;
+    font-weight: 700;
+  }
+
+  .promo_header_link a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #036dbe;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
 
@@ -60,22 +148,115 @@
   }
 
   .promo_img {
-    filter: drop-shadow(8px 4px 2px #ccc);
+    filter: drop-shadow(8px 4px 2px #828181);
     width: 677px;
   }
 
   .promo_inner_container {
-    height: 100px;
+    height: 150px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 25px;
     font-size: 14px;
     color: #444444;
   }
-}
 
-.Promo_header_link {
-  color: #036dbe;
-  font-size: 24px;
-  font-weight: bold;
+  .promo_detail_inner_container {
+    height: 150px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+  }
+
+  .table_detail {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 750px;
+    margin: 20px auto;
+    border: 2px solid #ffffff;
+  }
+
+  .table_detail th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #595454;
+    color: #cccccc;
+    border: 2px solid #ffffff;
+  }
+
+  .table_detail td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #e0dede;
+    color: #595454;
+    border: 2px solid #ffffff;
+    font-weight: 700;
+  }
+
+  .promo_detail_desktop_container {
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
+    padding-top: 10px;
+  }
+
+  .promo_detail_header {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 750px;
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .promo_detail_sub_title {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    width: 750px;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .promo_detail_left_text {
+    width: 750px;
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .promo_detail_center_text {
+    width: 750px;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .promo_detail_mobile_container {
+    display: none;
+  }
+
+  .promo_header_link a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #036dbe;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
